@@ -284,13 +284,13 @@ const Dashboard = () => {
                 className="bg-white rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:scale-105 cursor-pointer group overflow-hidden"
               >
                 <div className="p-6">
-                  <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-green-400 to-green-600 rounded-xl mb-4 text-2xl text-white group-hover:from-green-500 group-hover:to-green-700 transition-all duration-300">
+                  <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-600 rounded-xl mb-4 text-2xl text-white group-hover:from-blue-500 group-hover:to-blue-700 transition-all duration-300">
                     {app.icon}
                   </div>
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">{app.name}</h3>
                   <p className="text-gray-600 text-sm mb-4">{app.description}</p>
-                  <div className="flex items-center text-xs text-green-600 font-medium">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                  <div className="flex items-center text-xs text-blue-600 font-medium">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
                     Accès Direct
                   </div>
                 </div>
