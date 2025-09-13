@@ -222,10 +222,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "JWT Authentication System"
-    - "User Management API"
-    - "Applications API"
-    - "Token Generation for Portal Apps"
+    - "App Click Handling"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
