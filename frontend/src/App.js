@@ -107,8 +107,16 @@ const Login = () => {
       <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md transform transition-all duration-300 hover:scale-105">
         <div className="text-center mb-8">
           <div className="flex justify-center mb-6">
-            {/* TODO: Replace with actual SyncLogic logo when provided */}
-            <div className="bg-gradient-to-r from-cyan-500 to-blue-600 p-4 rounded-xl">
+            <img 
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAnCAYAAACVGOJuAAAACXBIWXMAAAsSAAALEgHS3X78AAANfElEQVR4nO2dfXQc1XnGfzN7kVZf1tqSbdmyvpJlW5ZlW7LkhxjbYDAEG4iBQCiQD0ggDWkD5ISEtJAeTnKapj2n/bdt2gQCaZoQCKFJIAGbOODEH5K/ZH/Ikm1JlmVbX5Zl7e7szD/emdmdnZnZ2V1pJcv33HPOzs7u3Lnzvs+9731/974jABYvXox58+YhLy8PUqkU\..." alt="SyncLogic" 
+              className="h-12 w-auto"
+              onError={(e) => {
+                // Fallback to SVG icon if image fails to load
+                e.target.style.display = 'none';
+                e.target.nextElementSibling.style.display = 'block';
+              }}
+            />
+            <div className="bg-gradient-to-r from-cyan-500 to-blue-600 p-4 rounded-xl" style={{display: 'none'}}>
               <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
                 <path d="M2 17L12 22L22 17"/>
