@@ -251,8 +251,17 @@ const Dashboard = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              {/* TODO: Replace with actual SyncLogic logo when provided */}
-              <div className="bg-gradient-to-r from-cyan-500 to-blue-600 p-2 rounded-lg mr-3">
+              <img 
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAnCAYAAACVGOJuAAAACXBIWXMAAAsSAAALEgHS3X78AAANfElEQVR4nO2dfXQc1XnGfzN7kVZf1tqSbdmyvpJlW5ZlW7LkhxjbYDAEG4iBQCiQD0ggDWkD5ISEtJAeTnKapj2n/bdt2gQCaZoQCKFJIAGbOODEH5K/ZH/Ikm1JlmVbX5Zl7e7szD/emdmdnZnZ2V1pJcv33HPOzs7u3Lnzvs+9731/974jABYvXox58+YhLy8PUqkU\..." 
+                alt="SyncLogic" 
+                className="h-8 w-auto mr-3"
+                onError={(e) => {
+                  // Fallback to SVG icon if image fails to load
+                  e.target.style.display = 'none';
+                  e.target.nextElementSibling.style.display = 'block';
+                }}
+              />
+              <div className="bg-gradient-to-r from-cyan-500 to-blue-600 p-2 rounded-lg mr-3" style={{display: 'none'}}>
                 <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
                   <path d="M2 17L12 22L22 17"/>
