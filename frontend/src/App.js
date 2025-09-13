@@ -107,6 +107,7 @@ const Login = () => {
       <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md transform transition-all duration-300 hover:scale-105">
         <div className="text-center mb-8">
           <div className="flex justify-center mb-6">
+            {/* TODO: Replace with actual SyncLogic logo when provided */}
             <div className="bg-gradient-to-r from-cyan-500 to-blue-600 p-4 rounded-xl">
               <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
